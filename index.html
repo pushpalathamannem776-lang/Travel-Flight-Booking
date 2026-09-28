@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyFly - Flight Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">✈️ SkyFly</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#flights">Flights</a>
+            <a href="#offers">Offers</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <h1>Book Your Next Journey</h1>
+            <p>Find and book affordable flights easily.</p>
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-box">
+
+            <div class="field">
+                <label>From</label>
+                <input type="text" id="from" placeholder="Chennai">
+            </div>
+
+            <div class="field">
+                <label>To</label>
+                <input type="text" id="to" placeholder="Delhi">
+            </div>
+
+            <div class="field">
+                <label>Departure</label>
+                <input type="date" id="date">
+            </div>
+
+            <div class="field">
+                <label>Passengers</label>
+                <select id="passengers">
+                    <option value="1">1 Passenger</option>
+                    <option value="2">2 Passengers</option>
+                    <option value="3">3 Passengers</option>
+                    <option value="4">4 Passengers</option>
+                </select>
+            </div>
+
+            <button onclick="searchFlights()">Search Flights</button>
+
+        </div>
+
+    </section>
+
+    <!-- Flights -->
+    <section class="flights" id="flights">
+
+        <h2>Available Flights</h2>
+
+        <div id="flightResults">
+
+            <div class="flight-card">
+                <div>
+                    <h3>✈️ SkyFly Airlines</h3>
+                    <p>Chennai → Delhi</p>
+                </div>
+
+                <div>
+                    <p>10:30 AM - 01:15 PM</p>
+                    <h3>₹4,999</h3>
+                </div>
+
+                <button onclick="bookFlight('SkyFly Airlines')">
+                    Book Now
+                </button>
+            </div>
+
+            <div class="flight-card">
+                <div>
+                    <h3>✈️ Air India</h3>
+                    <p>Chennai → Mumbai</p>
+                </div>
+
+                <div>
+                    <p>02:00 PM - 04:00 PM</p>
+                    <h3>₹3,999</h3>
+                </div>
+
+                <button onclick="bookFlight('Air India')">
+                    Book Now
+                </button>
+            </div>
+
+            <div class="flight-card">
+                <div>
+                    <h3>✈️ IndiGo</h3>
+                    <p>Chennai → Bangalore</p>
+                </div>
+
+                <div>
+                    <p>06:30 PM - 07:35 PM</p>
+                    <h3>₹2,499</h3>
+                </div>
+
+                <button onclick="bookFlight('IndiGo')">
+                    Book Now
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Offers -->
+    <section class="offers" id="offers">
+
+        <h2>Special Offers</h2>
+
+        <div class="offer-container">
+
+            <div class="offer-card">
+                <h3>🎉 First Booking</h3>
+                <p>Get up to 20% discount on your first booking.</p>
+            </div>
+
+            <div class="offer-card">
+                <h3>💳 Card Offer</h3>
+                <p>Save ₹500 using selected bank cards.</p>
+            </div>
+
+            <div class="offer-card">
+                <h3>🌍 International</h3>
+                <p>Special deals on international flights.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@skyfly.com</p>
+        <p>Phone: +91 98765 43210</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 SkyFly. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
